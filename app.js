@@ -16,6 +16,14 @@ app.get('/',(req,res)=>{
     res.render('index',{_secrets:secrets})
 });
 
+app.get('/about',(req,res)=>{
+    res.render('about',{_secrets:secrets})
+});
+
+app.get('/contact',(req,res)=>{
+    res.render('contact',{_secrets:secrets})
+});
+
 
 app.listen(SERVER_PORT, ()=>{
     console.log("Server has started on port ",SERVER_PORT);
